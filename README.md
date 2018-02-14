@@ -34,11 +34,12 @@ Macの場合は、ビルドされた UVUnwrapLSCM.shdpluginをShade3Dのplugins�
 
 UV図面でUVメニューを開き、コンテキストメニューで「UV展開 (LSCM)」を選択します。  
 <img src="https://github.com/ft-lab/Shade3D_UVUnwrapLSCM/blob/master/wiki_images/UVUnwrap_lscm_03.png"/>  
+<img src="https://github.com/ft-lab/Shade3D_UVUnwrapLSCM/blob/master/wiki_images/UVUnwrap_lscm_04.png"/>  
 「UVのLSCM展開」ウィンドウで、UV層番号を指定、  
 「すべての面」チェックボックスをオンにすると、選択状態にかかわらずすべての面がLSCM展開されます。  
 オフにすると、選択面のみがLSCM展開されます。  
 以下のように重ならないようにシームに沿って展開されました。  
-<img src="https://github.com/ft-lab/Shade3D_UVUnwrapLSCM/blob/master/wiki_images/UVUnwrap_lscm_04.png"/>  
+<img src="https://github.com/ft-lab/Shade3D_UVUnwrapLSCM/blob/master/wiki_images/UVUnwrap_lscm_05.png"/>  
 
 
 ### Shade3D ver.16/17の標準搭載のLSCMとの違い
