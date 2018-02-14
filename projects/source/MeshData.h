@@ -84,7 +84,6 @@ public:
 	CMeshTriangleVertexData tri[3];		// 三角形の頂点ごとの情報.
 	int orgFaceIndex;					// オリジナルの面番号.
 	int groupID;						// Seamで区切られるグループ番号.
-	sxsdk::vec3 normal;					// 法線.
 
 public:
 	CMeshTriangleData () {

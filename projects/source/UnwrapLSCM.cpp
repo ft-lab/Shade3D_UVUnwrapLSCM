@@ -1,5 +1,6 @@
 ﻿/**
  * LSCMによるUV展開を行う.
+ * LSCMでは「OpenNL」(http://alice.loria.fr/index.php/software/4-library/23-opennl.html)を使用している。.
  */
 #include "UnwrapLSCM.h"
 #include "UVSeam.h"
@@ -83,6 +84,7 @@ bool CUnwrapLSCM::DoUnwrap (sxsdk::shape_class* shape,  const int uvLayerIndex, 
 /**
  * メッシュをLSCMに渡す際の前処理.
  * グループごとに端の頂点が移動しないようにロック.
+ * 頂点をロックすることで、「ピン止め」ができる.
  */
 void CUnwrapLSCM::m_Project (CMeshData& meshData)
 {

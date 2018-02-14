@@ -53,9 +53,6 @@ bool CMeshData::StoreMesh (sxsdk::shape_class& shape, const bool allFaces)
 		const int facesCou = pMesh.get_number_of_faces();
 		if (versCou <= 0 || facesCou <= 0) return false;
 
-		// 面法線を計算 (get_plane_equation関数を呼ぶために必要).
-		pMesh.setup_plane_equation();
-
 		// 頂点を保持.
 		sxsdk::polygon_mesh_saver_class* pMeshSaver = pMesh.get_polygon_mesh_saver();
 		vertices.resize(versCou);
@@ -78,10 +75,6 @@ bool CMeshData::StoreMesh (sxsdk::shape_class& shape, const bool allFaces)
 			const int vCou = f.get_number_of_vertices();
 			if (vCou <= 2) continue;
 
-			// 面法線を取得.
-			const sxsdk::vec4 v4 = pMesh.get_plane_equation(i);
-			const sxsdk::vec3 n(v4.x, v4.y, v4.z);
-
 			indices.resize(vCou);
 			f.get_vertex_indices(&(indices[0]));
 			versList.resize(vCou);
@@ -102,7 +95,6 @@ bool CMeshData::StoreMesh (sxsdk::shape_class& shape, const bool allFaces)
 				}
 				triData.orgFaceIndex = i;
 				triData.groupID      = -1;
-				triData.normal       = n;
 				triangles.push_back(triData);
 			}
 		}
@@ -248,7 +240,7 @@ void CMeshData::m_SetGroupID (sxsdk::shape_class& shape, const std::vector<int>&
 					triIndexB[1] = triD2.tri[1].vIndex;
 					triIndexB[2] = triD2.tri[2].vIndex;
 
-					// triIndexA[], triIndexB]の三角形で共有エッジを持つかどうか.
+					// triIndexA[], triIndexB[]の三角形で共有エッジを持つかどうか.
 					if (!m_ChkTrianglesShareEdge(triIndexA, triIndexB, edgeIV)) continue;
 
 					// Seamのエッジでさえぎられる場合はスキップ.
