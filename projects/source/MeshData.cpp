@@ -541,13 +541,21 @@ void CMeshData::m_DividePointsInSameGroup (sxsdk::shape_class& shape, const std:
 						auto iter = std::find(seamPointsList.begin(), seamPointsList.end(), triD2.tri[k].orgVIndex);
 						if (iter != seamPointsList.end()) {
 							const int sIndex = std::distance(seamPointsList.begin(), iter);
-							// seamPointsList[]の先頭か末尾の場合は、3面以上の共有がある場合にスキップフラグを立てる.
+							tmpSeamPointsTriCountList[sIndex]++;
+
+							// seamPointsList[]の先頭か末尾の場合は、ロック状態によってスキップフラグを立てる.
 							if (sIndex == 0 || sIndex == pCou - 1) {
-								if (tmpSeamPointsTriCountList[sIndex] >= 3) {
-									skipF = true;
+								const int tmpTriCou = tmpSeamPointsTriCountList[sIndex];
+								if (tmpTriCou >= 2) {
+									if (seamPointsLock[sIndex]) {
+										skipF = true;
+									} else {
+										if (tmpTriCou > 3) {
+											skipF = true;
+										}
+									}
 								}
 							}
-							tmpSeamPointsTriCountList[sIndex]++;
 							cou++;
 						}
 					}
