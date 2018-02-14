@@ -48,8 +48,9 @@ https://github.com/shadedev/pluginsdk
 
 ### プロジェクトの配置
 
-SDKの「plugin_projects」ディレクトリに「UVUnwrapLSCM」ディレクトリを作成し、  
-GitHubでダウンロードしたファイルの「projects」ディレクトリ内を複製します。  
+SDKの「plugin_projects」ディレクトリに   
+GitHubでダウンロードしたファイルの「projects」ディレクトリ内の「UVUnwrapLSCM」を複製します。  
+以下のようなディレクトリ構成にします。  
 ```
   [plugin_projects]  
     [UVUnwrapLSCM]  
