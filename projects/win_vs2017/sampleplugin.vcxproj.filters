@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\source\OpenNL_psm.c">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\sxcore\com.cpp">
+      <Filter>shade3d_sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\sxcore\debug.cpp">
+      <Filter>shade3d_sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\sxcore\vectors.cpp">
+      <Filter>shade3d_sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UVUnwrapInterface.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UnwrapLSCM.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UVSeam.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\UVSeamAttributeInterface.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\SeamEdgePluginInterface.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MeshData.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MeshUtil.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\OpenNL_psm.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\GlobalHeader.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\UVUnwrapInterface.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\UnwrapLSCM.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\UVSeam.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\UVSeamAttributeInterface.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\SeamEdgePluginInterface.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MeshData.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\MeshUtil.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\resources\ja.lproj\sxuls\text.sxul">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\source\resources\en.lproj\sxuls\text.sxul">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\source\resources\en.lproj\sxuls\uv_lscm_dlg.sxul">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="..\source\resources\ja.lproj\sxuls\uv_lscm_dlg.sxul">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{e244fa08-134d-4551-bdf8-2b11db544d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{4bb3e5eb-7b2a-4b0d-b3c1-4cfb0f0aaaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shade3d_sources">
+      <UniqueIdentifier>{e83ccf1e-d68d-4e00-93d1-af1c0a6d77ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="script2.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
