@@ -27,6 +27,7 @@ Macの場合は、ビルドされた UVUnwrapLSCM64.shdpluginをShade3Dのplugin
 UV展開でのサイズが、完全にジオメトリと比例するわけではありません。
 * LSCM展開後に1つのグループとなる場合、同一グループで切れ目(Seam)を入れた展開ができるようにしています。  
 円柱の側面に縦線1本分の切れ目(Seam)を入れて、ぐるっと展開する場合など。  
+<img src="https://github.com/ft-lab/Shade3D_UVUnwrapLSCM/blob/master/wiki_images/UVUnwrap_lscm_01.png"/>  
 
 ## ビルド方法 (開発向け)
 
