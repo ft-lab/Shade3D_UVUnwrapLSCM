@@ -18,7 +18,7 @@ https://github.com/ft-lab/Shade3D_UVUnwrapLSCM/releases
 ### プラグインを配置し、Shade3Dを起動
 Winの場合は、ビルドされた UVUnwrapLSCM64.dll をShade3Dのpluginsディレクトリに格納してShade3Dを起動。  
 Macの場合は、ビルドされた UVUnwrapLSCM.shdpluginをShade3Dのpluginsディレクトリに格納してShade3Dを起動。  
-メインメニューの「ツール」-「プラグイン」-「選択エッジをシーンとして追加」が表示されるのを確認します。  
+メインメニューの「ツール」-「プラグイン」-「選択エッジをシームとして追加」が表示されるのを確認します。  
 
 ### 使い方
 
@@ -104,7 +104,7 @@ Mac環境の場合は「plugin_projects/UVUnwrapLSCM/mac/plugins/UVUnwrapLSCM.xc
 
 ## ライセンス  
 
-This software is released under the MIT License, see [LICENSE.txt](./LICENSE.txt).  
+This software is released under the MIT License, see [LICENSE.txt](./LICENSE).  
 LSCM展開に「OpenNL」( http://alice.loria.fr/index.php/software/4-library/23-opennl.html )を使用しています。  
 
 ## 更新履歴
