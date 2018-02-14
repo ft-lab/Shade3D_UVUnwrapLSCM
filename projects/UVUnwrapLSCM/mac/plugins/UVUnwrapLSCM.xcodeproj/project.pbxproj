@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16F9E21B0546323A00F09F49 /* shdplugin.icns in Resources */ = {isa = PBXBuildFile; fileRef = 16F9E21A0546323A00F09F49 /* shdplugin.icns */; };
+		1880855E1249917B00869131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880855D1249917B00869131 /* Foundation.framework */; };
+		188085601249919600869131 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1880855F1249919600869131 /* AppKit.framework */; };
+		29B879920C042E4200F329B2 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 29B8798B0C042E4200F329B2 /* ja.lproj */; };
+		29B879A70C042EAF00F329B2 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 29B879A00C042EAF00F329B2 /* en.lproj */; };
+		4A53992A082F876000832195 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A539929082F876000832195 /* CoreFoundation.framework */; };
+		4A53996D082F87C100832195 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A53996C082F87C100832195 /* CoreServices.framework */; };
+		92197E9420345BEE00119899 /* GlobalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E8220345BEE00119899 /* GlobalHeader.h */; };
+		92197E9520345BEE00119899 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E8320345BEE00119899 /* main.cpp */; };
+		92197E9620345BEE00119899 /* MeshData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E8420345BEE00119899 /* MeshData.cpp */; };
+		92197E9720345BEE00119899 /* MeshData.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E8520345BEE00119899 /* MeshData.h */; };
+		92197E9820345BEE00119899 /* MeshUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E8620345BEE00119899 /* MeshUtil.cpp */; };
+		92197E9920345BEE00119899 /* MeshUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E8720345BEE00119899 /* MeshUtil.h */; };
+		92197E9A20345BEE00119899 /* OpenNL_psm.c in Sources */ = {isa = PBXBuildFile; fileRef = 92197E8820345BEE00119899 /* OpenNL_psm.c */; };
+		92197E9B20345BEE00119899 /* OpenNL_psm.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E8920345BEE00119899 /* OpenNL_psm.h */; };
+		92197E9C20345BEE00119899 /* SeamEdgePluginInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E8A20345BEE00119899 /* SeamEdgePluginInterface.cpp */; };
+		92197E9D20345BEE00119899 /* SeamEdgePluginInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E8B20345BEE00119899 /* SeamEdgePluginInterface.h */; };
+		92197E9E20345BEE00119899 /* UnwrapLSCM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E8C20345BEE00119899 /* UnwrapLSCM.cpp */; };
+		92197E9F20345BEE00119899 /* UnwrapLSCM.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E8D20345BEE00119899 /* UnwrapLSCM.h */; };
+		92197EA020345BEE00119899 /* UVSeam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E8E20345BEE00119899 /* UVSeam.cpp */; };
+		92197EA120345BEE00119899 /* UVSeam.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E8F20345BEE00119899 /* UVSeam.h */; };
+		92197EA220345BEE00119899 /* UVSeamAttributeInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E9020345BEE00119899 /* UVSeamAttributeInterface.cpp */; };
+		92197EA320345BEE00119899 /* UVSeamAttributeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E9120345BEE00119899 /* UVSeamAttributeInterface.h */; };
+		92197EA420345BEE00119899 /* UVUnwrapInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E9220345BEE00119899 /* UVUnwrapInterface.cpp */; };
+		92197EA520345BEE00119899 /* UVUnwrapInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E9320345BEE00119899 /* UVUnwrapInterface.h */; };
+		92197EA720345C0200119899 /* UVUnwrapLSCM.info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92197EA620345C0200119899 /* UVUnwrapLSCM.info.plist */; };
+		928A4B2C2034627B00A63B24 /* UVUnwrapLSCM.shdplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8C4EB8604BCA9FB00A80009 /* UVUnwrapLSCM.shdplugin */; };
+		C7CF5628197F536B003471D2 /* com.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7CF5625197F536B003471D2 /* com.cpp */; };
+		C7CF5629197F536B003471D2 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7CF5626197F536B003471D2 /* debug.cpp */; };
+		C7CF562A197F536B003471D2 /* vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7CF5627197F536B003471D2 /* vectors.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A534A0C082B7E4100852BAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../../../../../../builds/mac/plugins;
+			dstSubfolderSpec = 16;
+			files = (
+				928A4B2C2034627B00A63B24 /* UVUnwrapLSCM.shdplugin in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		16F9E21A0546323A00F09F49 /* shdplugin.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = shdplugin.icns; path = ../xshade/icns/shdplugin.icns; sourceTree = SOURCE_ROOT; };
+		1880855D1249917B00869131 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1880855F1249919600869131 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B8798B0C042E4200F329B2 /* ja.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ja.lproj; path = ../../source/resources/ja.lproj; sourceTree = SOURCE_ROOT; };
+		29B879A00C042EAF00F329B2 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = ../../source/resources/en.lproj; sourceTree = SOURCE_ROOT; };
+		32DBCF630370AF2F00C91783 /* xplugins_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xplugins_Prefix.pch; sourceTree = "<group>"; };
+		4A539929082F876000832195 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = ../../../../../../../../../System/Library/Frameworks/CoreFoundation.framework; sourceTree = SOURCE_ROOT; };
+		4A53996C082F87C100832195 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = ../../../../../../../../../System/Library/Frameworks/CoreServices.framework; sourceTree = SOURCE_ROOT; };
+		92197E8220345BEE00119899 /* GlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GlobalHeader.h; path = ../../source/GlobalHeader.h; sourceTree = "<group>"; };
+		92197E8320345BEE00119899 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../source/main.cpp; sourceTree = "<group>"; };
+		92197E8420345BEE00119899 /* MeshData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MeshData.cpp; path = ../../source/MeshData.cpp; sourceTree = "<group>"; };
+		92197E8520345BEE00119899 /* MeshData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeshData.h; path = ../../source/MeshData.h; sourceTree = "<group>"; };
+		92197E8620345BEE00119899 /* MeshUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MeshUtil.cpp; path = ../../source/MeshUtil.cpp; sourceTree = "<group>"; };
+		92197E8720345BEE00119899 /* MeshUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MeshUtil.h; path = ../../source/MeshUtil.h; sourceTree = "<group>"; };
+		92197E8820345BEE00119899 /* OpenNL_psm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = OpenNL_psm.c; path = ../../source/OpenNL_psm.c; sourceTree = "<group>"; };
+		92197E8920345BEE00119899 /* OpenNL_psm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenNL_psm.h; path = ../../source/OpenNL_psm.h; sourceTree = "<group>"; };
+		92197E8A20345BEE00119899 /* SeamEdgePluginInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SeamEdgePluginInterface.cpp; path = ../../source/SeamEdgePluginInterface.cpp; sourceTree = "<group>"; };
+		92197E8B20345BEE00119899 /* SeamEdgePluginInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeamEdgePluginInterface.h; path = ../../source/SeamEdgePluginInterface.h; sourceTree = "<group>"; };
+		92197E8C20345BEE00119899 /* UnwrapLSCM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UnwrapLSCM.cpp; path = ../../source/UnwrapLSCM.cpp; sourceTree = "<group>"; };
+		92197E8D20345BEE00119899 /* UnwrapLSCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnwrapLSCM.h; path = ../../source/UnwrapLSCM.h; sourceTree = "<group>"; };
+		92197E8E20345BEE00119899 /* UVSeam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UVSeam.cpp; path = ../../source/UVSeam.cpp; sourceTree = "<group>"; };
+		92197E8F20345BEE00119899 /* UVSeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSeam.h; path = ../../source/UVSeam.h; sourceTree = "<group>"; };
+		92197E9020345BEE00119899 /* UVSeamAttributeInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UVSeamAttributeInterface.cpp; path = ../../source/UVSeamAttributeInterface.cpp; sourceTree = "<group>"; };
+		92197E9120345BEE00119899 /* UVSeamAttributeInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVSeamAttributeInterface.h; path = ../../source/UVSeamAttributeInterface.h; sourceTree = "<group>"; };
+		92197E9220345BEE00119899 /* UVUnwrapInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UVUnwrapInterface.cpp; path = ../../source/UVUnwrapInterface.cpp; sourceTree = "<group>"; };
+		92197E9320345BEE00119899 /* UVUnwrapInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UVUnwrapInterface.h; path = ../../source/UVUnwrapInterface.h; sourceTree = "<group>"; };
+		92197EA620345C0200119899 /* UVUnwrapLSCM.info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UVUnwrapLSCM.info.plist; path = plists/UVUnwrapLSCM.info.plist; sourceTree = "<group>"; };
+		B8C4EB8604BCA9FB00A80009 /* UVUnwrapLSCM.shdplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UVUnwrapLSCM.shdplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FA2D5004BCE0E800A80009 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		B8FA2DE904BCE16F00A80009 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		B8FCB9DC06AB308C00544DB7 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		C7A6141B1898EC1B008B2D6E /* config.plugins.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = config.plugins.xcconfig; path = ../../../../xcconfig/config.plugins.xcconfig; sourceTree = "<group>"; };
+		C7CF5625197F536B003471D2 /* com.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = com.cpp; path = ../../../../include/sxcore/com.cpp; sourceTree = "<group>"; };
+		C7CF5626197F536B003471D2 /* debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = debug.cpp; path = ../../../../include/sxcore/debug.cpp; sourceTree = "<group>"; };
+		C7CF5627197F536B003471D2 /* vectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vectors.cpp; path = ../../../../include/sxcore/vectors.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8C4EB8404BCA9FB00A80009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A53992A082F876000832195 /* CoreFoundation.framework in Frameworks */,
+				4A53996D082F87C100832195 /* CoreServices.framework in Frameworks */,
+				1880855E1249917B00869131 /* Foundation.framework in Frameworks */,
+				188085601249919600869131 /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* xplugins */ = {
+			isa = PBXGroup;
+			children = (
+				C7A6141B1898EC1B008B2D6E /* config.plugins.xcconfig */,
+				4A534634082B5E4C00852BAF /* mysource */,
+				B8F429BB04BCB35A00A80009 /* plists */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = xplugins;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29B879820C042E0200F329B2 /* sxul */,
+				16F9E21A0546323A00F09F49 /* shdplugin.icns */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A53996C082F87C100832195 /* CoreServices.framework */,
+				4A539929082F876000832195 /* CoreFoundation.framework */,
+				B8FCB9DC06AB308C00544DB7 /* QuickTime.framework */,
+				B8FA2D5004BCE0E800A80009 /* Carbon.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				B8FA2DE904BCE16F00A80009 /* OpenGL.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1880855D1249917B00869131 /* Foundation.framework */,
+				1880855F1249919600869131 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4EB8604BCA9FB00A80009 /* UVUnwrapLSCM.shdplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B879820C042E0200F329B2 /* sxul */ = {
+			isa = PBXGroup;
+			children = (
+				29B879A00C042EAF00F329B2 /* en.lproj */,
+				29B8798B0C042E4200F329B2 /* ja.lproj */,
+			);
+			name = sxul;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				C7CF5625197F536B003471D2 /* com.cpp */,
+				C7CF5626197F536B003471D2 /* debug.cpp */,
+				C7CF5627197F536B003471D2 /* vectors.cpp */,
+				32DBCF630370AF2F00C91783 /* xplugins_Prefix.pch */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		4A534634082B5E4C00852BAF /* mysource */ = {
+			isa = PBXGroup;
+			children = (
+				92197E8220345BEE00119899 /* GlobalHeader.h */,
+				92197E8320345BEE00119899 /* main.cpp */,
+				92197E8420345BEE00119899 /* MeshData.cpp */,
+				92197E8520345BEE00119899 /* MeshData.h */,
+				92197E8620345BEE00119899 /* MeshUtil.cpp */,
+				92197E8720345BEE00119899 /* MeshUtil.h */,
+				92197E8820345BEE00119899 /* OpenNL_psm.c */,
+				92197E8920345BEE00119899 /* OpenNL_psm.h */,
+				92197E8A20345BEE00119899 /* SeamEdgePluginInterface.cpp */,
+				92197E8B20345BEE00119899 /* SeamEdgePluginInterface.h */,
+				92197E8C20345BEE00119899 /* UnwrapLSCM.cpp */,
+				92197E8D20345BEE00119899 /* UnwrapLSCM.h */,
+				92197E8E20345BEE00119899 /* UVSeam.cpp */,
+				92197E8F20345BEE00119899 /* UVSeam.h */,
+				92197E9020345BEE00119899 /* UVSeamAttributeInterface.cpp */,
+				92197E9120345BEE00119899 /* UVSeamAttributeInterface.h */,
+				92197E9220345BEE00119899 /* UVUnwrapInterface.cpp */,
+				92197E9320345BEE00119899 /* UVUnwrapInterface.h */,
+			);
+			name = mysource;
+			sourceTree = "<group>";
+		};
+		B8F429BB04BCB35A00A80009 /* plists */ = {
+			isa = PBXGroup;
+			children = (
+				92197EA620345C0200119899 /* UVUnwrapLSCM.info.plist */,
+			);
+			name = plists;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B8C4EB8104BCA9FB00A80009 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92197E9D20345BEE00119899 /* SeamEdgePluginInterface.h in Headers */,
+				92197EA120345BEE00119899 /* UVSeam.h in Headers */,
+				92197E9420345BEE00119899 /* GlobalHeader.h in Headers */,
+				92197EA520345BEE00119899 /* UVUnwrapInterface.h in Headers */,
+				92197E9B20345BEE00119899 /* OpenNL_psm.h in Headers */,
+				92197E9920345BEE00119899 /* MeshUtil.h in Headers */,
+				92197E9F20345BEE00119899 /* UnwrapLSCM.h in Headers */,
+				92197EA320345BEE00119899 /* UVSeamAttributeInterface.h in Headers */,
+				92197E9720345BEE00119899 /* MeshData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B8C4EB8504BCA9FB00A80009 /* UVUnwrapLSCM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D39A0308643DD1007494E7 /* Build configuration list for PBXNativeTarget "UVUnwrapLSCM" */;
+			buildPhases = (
+				B8C4EB8104BCA9FB00A80009 /* Headers */,
+				B8C4EB8204BCA9FB00A80009 /* Resources */,
+				B8C4EB8304BCA9FB00A80009 /* Sources */,
+				B8C4EB8404BCA9FB00A80009 /* Frameworks */,
+				4A534A0C082B7E4100852BAF /* CopyFiles */,
+				29FB8F120C03E529005CAC17 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UVUnwrapLSCM;
+			productName = multi_plugin;
+			productReference = B8C4EB8604BCA9FB00A80009 /* UVUnwrapLSCM.shdplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 12D39A0B08643DD1007494E7 /* Build configuration list for PBXProject "UVUnwrapLSCM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				es,
+				ja,
+				zh_CN,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* xplugins */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8C4EB8504BCA9FB00A80009 /* UVUnwrapLSCM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8C4EB8204BCA9FB00A80009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F9E21B0546323A00F09F49 /* shdplugin.icns in Resources */,
+				29B879920C042E4200F329B2 /* ja.lproj in Resources */,
+				92197EA720345C0200119899 /* UVUnwrapLSCM.info.plist in Resources */,
+				29B879A70C042EAF00F329B2 /* en.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29FB8F120C03E529005CAC17 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8C4EB8304BCA9FB00A80009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92197E9820345BEE00119899 /* MeshUtil.cpp in Sources */,
+				92197E9A20345BEE00119899 /* OpenNL_psm.c in Sources */,
+				C7CF5629197F536B003471D2 /* debug.cpp in Sources */,
+				C7CF562A197F536B003471D2 /* vectors.cpp in Sources */,
+				92197EA020345BEE00119899 /* UVSeam.cpp in Sources */,
+				92197E9E20345BEE00119899 /* UnwrapLSCM.cpp in Sources */,
+				92197E9620345BEE00119899 /* MeshData.cpp in Sources */,
+				92197EA420345BEE00119899 /* UVUnwrapInterface.cpp in Sources */,
+				92197E9520345BEE00119899 /* main.cpp in Sources */,
+				92197EA220345BEE00119899 /* UVSeamAttributeInterface.cpp in Sources */,
+				C7CF5628197F536B003471D2 /* com.cpp in Sources */,
+				92197E9C20345BEE00119899 /* SeamEdgePluginInterface.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		12D39A0408643DD1007494E7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = xplugins_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = plists/UVUnwrapLSCM.info.plist;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UVUnwrapLSCM;
+				SDKROOT = macosx10.9;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-w";
+				WRAPPER_EXTENSION = shdplugin;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		12D39A0508643DD1007494E7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = xplugins_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = plists/UVUnwrapLSCM.info.plist;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = UVUnwrapLSCM;
+				SDKROOT = macosx10.9;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-w";
+				WRAPPER_EXTENSION = shdplugin;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		12D39A0C08643DD1007494E7 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A6141B1898EC1B008B2D6E /* config.plugins.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(MACROS)",
+					GEO_STATIC_LIBS,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx10.9;
+			};
+			name = Development;
+		};
+		12D39A0D08643DD1007494E7 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A6141B1898EC1B008B2D6E /* config.plugins.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(MACROS)",
+					GEO_STATIC_LIBS,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx10.9;
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D39A0308643DD1007494E7 /* Build configuration list for PBXNativeTarget "UVUnwrapLSCM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D39A0408643DD1007494E7 /* Development */,
+				12D39A0508643DD1007494E7 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+		12D39A0B08643DD1007494E7 /* Build configuration list for PBXProject "UVUnwrapLSCM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D39A0C08643DD1007494E7 /* Development */,
+				12D39A0D08643DD1007494E7 /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Deployment;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
