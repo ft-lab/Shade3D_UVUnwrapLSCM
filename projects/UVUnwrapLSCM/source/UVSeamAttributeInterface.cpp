@@ -23,7 +23,7 @@ void CUVSeamAttributeInterface::make_wireframe (sxsdk::shape_class &shape, const
 	const int eCou = (int)seamEdgeIndices.size();
 	if (eCou == 0) return;
 
-	sxsdk::mat4 m = mat * shape.get_world_to_local_matrix();
+	sxsdk::mat4 m = mat;
 
 	try {
 		sxsdk::polygon_mesh_class& pMesh = shape.get_polygon_mesh();

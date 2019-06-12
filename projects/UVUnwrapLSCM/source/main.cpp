@@ -131,7 +131,7 @@ extern "C" SXSDKEXPORT void STDCALL get_info (sxsdk::shade_plugin_info &info, sx
 	info.major_version = 1;
 	info.minor_version = 0;
 	info.micro_version = 0;
-	info.build_number = 0;
+	info.build_number = 1;
 }
 
 // Should return true if the plugin interfaces do not depend on each other. 
