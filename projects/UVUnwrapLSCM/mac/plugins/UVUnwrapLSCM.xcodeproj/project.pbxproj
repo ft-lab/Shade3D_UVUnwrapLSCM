@@ -33,24 +33,10 @@
 		92197EA420345BEE00119899 /* UVUnwrapInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92197E9220345BEE00119899 /* UVUnwrapInterface.cpp */; };
 		92197EA520345BEE00119899 /* UVUnwrapInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 92197E9320345BEE00119899 /* UVUnwrapInterface.h */; };
 		92197EA720345C0200119899 /* UVUnwrapLSCM.info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92197EA620345C0200119899 /* UVUnwrapLSCM.info.plist */; };
-		928A4B2C2034627B00A63B24 /* UVUnwrapLSCM.shdplugin in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8C4EB8604BCA9FB00A80009 /* UVUnwrapLSCM.shdplugin */; };
 		C7CF5628197F536B003471D2 /* com.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7CF5625197F536B003471D2 /* com.cpp */; };
 		C7CF5629197F536B003471D2 /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7CF5626197F536B003471D2 /* debug.cpp */; };
 		C7CF562A197F536B003471D2 /* vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7CF5627197F536B003471D2 /* vectors.cpp */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4A534A0C082B7E4100852BAF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = ../../../../../../builds/mac/plugins;
-			dstSubfolderSpec = 16;
-			files = (
-				928A4B2C2034627B00A63B24 /* UVUnwrapLSCM.shdplugin in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -259,7 +245,6 @@
 				B8C4EB8204BCA9FB00A80009 /* Resources */,
 				B8C4EB8304BCA9FB00A80009 /* Sources */,
 				B8C4EB8404BCA9FB00A80009 /* Frameworks */,
-				4A534A0C082B7E4100852BAF /* CopyFiles */,
 				29FB8F120C03E529005CAC17 /* Run Script */,
 			);
 			buildRules = (
@@ -371,7 +356,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = UVUnwrapLSCM;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-w";
 				WRAPPER_EXTENSION = shdplugin;
@@ -393,7 +378,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = UVUnwrapLSCM;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "-w";
 				WRAPPER_EXTENSION = shdplugin;
@@ -405,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7A6141B1898EC1B008B2D6E /* config.plugins.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -412,7 +398,8 @@
 					GEO_STATIC_LIBS,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Development;
 		};
@@ -420,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7A6141B1898EC1B008B2D6E /* config.plugins.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -427,7 +415,8 @@
 					GEO_STATIC_LIBS,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Deployment;
 		};
